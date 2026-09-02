@@ -1,7 +1,4 @@
-import main.java.domain.Account;
-import main.java.domain.Direction;
-import main.java.domain.Entry;
-import main.java.domain.Transaction;
+import main.java.domain.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -22,7 +19,6 @@ public class Main {
                 LocalDateTime.now(),
                 "Transacao balanceada simples"
         );
-
 
     }
 }

@@ -1,5 +1,7 @@
 package main.java.domain;
 
+import main.java.domain.exception.UnbalancedTransactionException;
+
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -20,20 +22,16 @@ public class Transaction {
 
 
         for (Entry e : entries) {
-            System.out.println(totalCredit);
-            System.out.println(totalDebit);
 
             if (e.getDirection() == Direction.CREDIT) {
                 totalCredit = totalCredit.add(e.getAmount());
-                System.out.println(totalCredit);
             } else {
                 totalDebit = totalDebit.add(e.getAmount());
-                System.out.println(totalDebit);
             }
         }
 
         if (totalCredit.compareTo(totalDebit) != 0) {
-            throw new IllegalArgumentException("Invalid values. Transaction not completed.");
+            throw new UnbalancedTransactionException("Invalid values. Transaction not completed.");
         }
     }
 
