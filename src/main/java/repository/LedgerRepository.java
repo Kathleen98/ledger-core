@@ -11,9 +11,9 @@ public interface LedgerRepository {
 
     Account findAccountById(String id);
 
-    List<Account> findAllAccount();
+    List<Account> findAllAccounts();
 
     void saveTransaction(Transaction transaction);
 
-    List<Transaction> findAllTransaction();
+    List<Transaction> findAllTransactions();
 }
