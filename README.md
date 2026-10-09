@@ -11,7 +11,7 @@ Em construção
 - Toda transação tem seus lados equilibrados (débito = crédito).
 - O saldo é sempre derivado dos lançamentos, nunca guardado como um campo editável.
 - Lançamentos nunca são alterados, correções são novos lançamentos.
-
+``
 ## Tecnologias
 
 - Java
