@@ -2,6 +2,8 @@ package main.java.repository;
 
 import main.java.domain.Account;
 import main.java.domain.Transaction;
+
+import java.math.BigDecimal;
 import java.util.List;
 
 
@@ -16,4 +18,8 @@ public interface LedgerRepository {
     void saveTransaction(Transaction transaction);
 
     List<Transaction> findAllTransactions();
+
+    BigDecimal calculateBalance(String AccountId);
+
+
 }

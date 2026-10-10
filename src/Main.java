@@ -1,4 +1,5 @@
 import main.java.domain.*;
+import main.java.repository.InMemoryLedgerRepository;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -19,6 +20,16 @@ public class Main {
                 LocalDateTime.now(),
                 "Transacao balanceada simples"
         );
+
+        InMemoryLedgerRepository repository = new InMemoryLedgerRepository();
+
+        repository.saveTransaction(t1);
+
+        repository.calculateBalance(caixa.getId());
+        repository.calculateBalance(receita.getId());
+
+        System.out.println("Saldo caixa: " + repository.calculateBalance(caixa.getId()));
+        System.out.println("Saldo receita: " + repository.calculateBalance(receita.getId()));
 
     }
 }
