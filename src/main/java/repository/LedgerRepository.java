@@ -1,7 +1,7 @@
 package repository;
 
-import domain.Account;
-import domain.Transaction;
+import io.hokma.ledger.domain.Account;
+import io.hokma.ledger.domain.Transaction;
 
 import java.math.BigDecimal;
 import java.util.List;

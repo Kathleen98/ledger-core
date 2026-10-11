@@ -1,4 +1,4 @@
-package main.java.domain.exception;
+package io.hokma.ledger.domain.exception;
 
 public class UnbalancedTransactionException extends RuntimeException {
 

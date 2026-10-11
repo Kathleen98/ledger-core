@@ -1,4 +1,4 @@
-package domain;
+package io.hokma.ledger.domain;
 
 import java.util.UUID;
 
