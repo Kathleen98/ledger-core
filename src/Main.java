@@ -1,5 +1,5 @@
-import main.java.domain.*;
-import main.java.repository.InMemoryLedgerRepository;
+import domain.*;
+import repository.InMemoryLedgerRepository;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
