@@ -1,4 +1,4 @@
-package repository;
+package io.hokma.ledger.repository;
 
 import io.hokma.ledger.domain.Account;
 import io.hokma.ledger.domain.Direction;

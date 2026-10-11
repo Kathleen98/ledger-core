@@ -32,6 +32,7 @@ ledger-core/
 │   └── estudos/
 └── src/
     └── main/java/<seu/pacote>/ledger/
+        │── io.hokma.ledger.Main.java
         ├── domain/
         │   ├── Account.java
         │   ├── Entry.java
@@ -43,5 +44,5 @@ ledger-core/
         ├── repository/
         │   ├── LedgerRepository.java
         │   └── InMemoryLedgerRepository.java
-        └── Main.java
+        └
 ```
