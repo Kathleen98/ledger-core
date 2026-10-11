@@ -1,6 +1,6 @@
-package main.java.domain;
+package io.hokma.ledger.domain;
 
-import main.java.domain.exception.UnbalancedTransactionException;
+import io.hokma.ledger.domain.exception.UnbalancedTransactionException;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

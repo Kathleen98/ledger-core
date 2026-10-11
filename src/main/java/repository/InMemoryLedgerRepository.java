@@ -1,9 +1,9 @@
-package main.java.repository;
+package repository;
 
-import main.java.domain.Account;
-import main.java.domain.Direction;
-import main.java.domain.Entry;
-import main.java.domain.Transaction;
+import io.hokma.ledger.domain.Account;
+import io.hokma.ledger.domain.Direction;
+import io.hokma.ledger.domain.Entry;
+import io.hokma.ledger.domain.Transaction;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

@@ -1,5 +1,8 @@
-import main.java.domain.*;
-import main.java.repository.InMemoryLedgerRepository;
+import io.hokma.ledger.domain.Account;
+import io.hokma.ledger.domain.Direction;
+import io.hokma.ledger.domain.Entry;
+import io.hokma.ledger.domain.Transaction;
+import repository.InMemoryLedgerRepository;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

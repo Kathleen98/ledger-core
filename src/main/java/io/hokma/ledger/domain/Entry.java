@@ -1,4 +1,4 @@
-package main.java.domain;
+package io.hokma.ledger.domain;
 
 import java.math.BigDecimal;
 
