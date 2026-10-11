@@ -1,9 +1,9 @@
-package main.java.repository;
+package repository;
 
-import main.java.domain.Account;
-import main.java.domain.Direction;
-import main.java.domain.Entry;
-import main.java.domain.Transaction;
+import domain.Account;
+import domain.Direction;
+import domain.Entry;
+import domain.Transaction;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

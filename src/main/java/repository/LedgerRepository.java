@@ -1,7 +1,7 @@
-package main.java.repository;
+package repository;
 
-import main.java.domain.Account;
-import main.java.domain.Transaction;
+import domain.Account;
+import domain.Transaction;
 
 import java.math.BigDecimal;
 import java.util.List;
