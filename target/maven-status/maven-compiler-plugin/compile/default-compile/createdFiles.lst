@@ -1,0 +1,8 @@
+io\hokma\ledger\repository\LedgerRepository.class
+io\hokma\ledger\domain\Direction.class
+io\hokma\ledger\domain\Entry.class
+io\hokma\ledger\repository\InMemoryLedgerRepository.class
+io\hokma\ledger\domain\Account.class
+io\hokma\ledger\domain\Transaction.class
+io\hokma\ledger\Main.class
+io\hokma\ledger\domain\exception\UnbalancedTransactionException.class

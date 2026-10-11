@@ -1,0 +1,8 @@
+C:\studyspace\java\projetos-pessoais\ledger-core\src\main\java\io\hokma\ledger\domain\Account.java
+C:\studyspace\java\projetos-pessoais\ledger-core\src\main\java\io\hokma\ledger\domain\Direction.java
+C:\studyspace\java\projetos-pessoais\ledger-core\src\main\java\io\hokma\ledger\domain\Entry.java
+C:\studyspace\java\projetos-pessoais\ledger-core\src\main\java\io\hokma\ledger\domain\exception\UnbalancedTransactionException.java
+C:\studyspace\java\projetos-pessoais\ledger-core\src\main\java\io\hokma\ledger\domain\Transaction.java
+C:\studyspace\java\projetos-pessoais\ledger-core\src\main\java\io\hokma\ledger\Main.java
+C:\studyspace\java\projetos-pessoais\ledger-core\src\main\java\io\hokma\ledger\repository\InMemoryLedgerRepository.java
+C:\studyspace\java\projetos-pessoais\ledger-core\src\main\java\io\hokma\ledger\repository\LedgerRepository.java
