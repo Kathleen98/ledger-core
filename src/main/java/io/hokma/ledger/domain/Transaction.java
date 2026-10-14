@@ -13,8 +13,7 @@ public class Transaction {
     private final String description;
 
     public Transaction(List<Entry> entries, LocalDateTime createdAt, String description) {
-        this.entries = entries;
-        this.createdAt = createdAt;
+        this.entries = entries;           this.createdAt = createdAt;
         this.description = description;
 
         BigDecimal totalDebit = BigDecimal.ZERO;
