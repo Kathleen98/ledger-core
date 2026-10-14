@@ -4,6 +4,7 @@ import io.hokma.ledger.domain.Account;
 import io.hokma.ledger.domain.Direction;
 import io.hokma.ledger.domain.Entry;
 import io.hokma.ledger.domain.Transaction;
+import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -11,6 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Repository
 public class InMemoryLedgerRepository implements LedgerRepository {
 
     private final Map<String, Account> accounts = new HashMap<String, Account>();
