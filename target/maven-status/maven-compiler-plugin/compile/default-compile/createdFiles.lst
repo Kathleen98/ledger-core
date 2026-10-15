@@ -8,5 +8,6 @@ io\hokma\ledger\repository\LedgerRepository.class
 io\hokma\ledger\domain\Direction.class
 io\hokma\ledger\domain\Entry.class
 io\hokma\ledger\service\LedgerService.class
+io\hokma\ledger\controller\dto\GetAccountIdRequest.class
 io\hokma\ledger\domain\Account.class
 io\hokma\ledger\domain\exception\UnbalancedTransactionException.class

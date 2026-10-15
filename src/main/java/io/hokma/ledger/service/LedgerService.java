@@ -19,4 +19,8 @@ public class LedgerService {
         return account;
     }
 
+    public Account getAccountId(String id){
+        return repository.findAccountById(id);
+    }
+
 }

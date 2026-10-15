@@ -1,5 +1,6 @@
 C:\studyspace\java\projetos-pessoais\ledger-core\src\main\java\io\hokma\ledger\controller\dto\AccountResponse.java
 C:\studyspace\java\projetos-pessoais\ledger-core\src\main\java\io\hokma\ledger\controller\dto\CreateAccountRequest.java
+C:\studyspace\java\projetos-pessoais\ledger-core\src\main\java\io\hokma\ledger\controller\dto\GetAccountIdRequest.java
 C:\studyspace\java\projetos-pessoais\ledger-core\src\main\java\io\hokma\ledger\controller\LedgerController.java
 C:\studyspace\java\projetos-pessoais\ledger-core\src\main\java\io\hokma\ledger\domain\Account.java
 C:\studyspace\java\projetos-pessoais\ledger-core\src\main\java\io\hokma\ledger\domain\Direction.java
