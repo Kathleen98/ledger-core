@@ -1,6 +1,5 @@
 io\hokma\ledger\repository\InMemoryLedgerRepository.class
 io\hokma\ledger\domain\Transaction.class
-io\hokma\ledger\Main.class
 io\hokma\ledger\controller\dto\AccountResponse.class
 io\hokma\ledger\controller\dto\CreateAccountRequest.class
 io\hokma\ledger\controller\LedgerController.class

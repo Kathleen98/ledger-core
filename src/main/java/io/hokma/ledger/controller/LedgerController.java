@@ -2,12 +2,14 @@ package io.hokma.ledger.controller;
 
 import io.hokma.ledger.controller.dto.AccountResponse;
 import io.hokma.ledger.controller.dto.CreateAccountRequest;
-import io.hokma.ledger.controller.dto.GetAccountIdRequest;
 import io.hokma.ledger.domain.Account;
 import io.hokma.ledger.service.LedgerService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 public class LedgerController {
@@ -16,6 +18,18 @@ public class LedgerController {
 
     public LedgerController(LedgerService ledgerService){
         this.ledgerService = ledgerService;
+    }
+
+
+    @GetMapping("/accounts")
+    public ResponseEntity<List<AccountResponse>> getAllAccounts(){
+        List<Account> accounts = ledgerService.getAllAccounts();
+        List<AccountResponse> response = new ArrayList<>();
+        for (Account account : accounts){
+            response.add(new AccountResponse(account.getId(), account.getName()));
+        }
+
+        return ResponseEntity.ok(response);
     }
 
     @GetMapping("/accounts/{id}")
@@ -39,4 +53,5 @@ public class LedgerController {
         AccountResponse response = new AccountResponse(account.getId(), account.getName());
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
+
 }
