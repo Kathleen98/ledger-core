@@ -1,8 +1,11 @@
 package io.hokma.ledger.service;
 
+import io.hokma.ledger.controller.dto.AccountResponse;
 import io.hokma.ledger.domain.Account;
 import io.hokma.ledger.repository.LedgerRepository;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class LedgerService {
@@ -21,6 +24,10 @@ public class LedgerService {
 
     public Account getAccountId(String id){
         return repository.findAccountById(id);
+    }
+
+    public List<Account> getAllAccounts(){
+        return repository.findAllAccounts();
     }
 
 }
