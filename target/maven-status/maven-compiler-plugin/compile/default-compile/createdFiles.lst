@@ -1,6 +1,8 @@
+io\hokma\ledger\domain\BalanceCalculator.class
 io\hokma\ledger\repository\InMemoryLedgerRepository.class
 io\hokma\ledger\domain\Transaction.class
 io\hokma\ledger\controller\dto\AccountResponse.class
+io\hokma\ledger\config\AppConfig.class
 io\hokma\ledger\controller\dto\CreateAccountRequest.class
 io\hokma\ledger\controller\LedgerController.class
 io\hokma\ledger\repository\LedgerRepository.class
@@ -10,3 +12,4 @@ io\hokma\ledger\service\LedgerService.class
 io\hokma\ledger\controller\dto\GetAccountIdRequest.class
 io\hokma\ledger\domain\Account.class
 io\hokma\ledger\domain\exception\UnbalancedTransactionException.class
+io\hokma\ledger\LedgerApplication.class

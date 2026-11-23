@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,8 +47,12 @@ public class LedgerController {
 
     }
 
+    @GetMapping("/account/calculate/{accountId}")
+    public ResponseEntity<BigDecimal> getBalance(@PathVariable String accountId){
+        return ResponseEntity.ok(ledgerService.getBalance(accountId));
+    }
 
-    @PostMapping("/accounts")
+    @PostMapping("/accounts/create")
     public ResponseEntity<AccountResponse> createAccount(@RequestBody CreateAccountRequest createAccountRequest) {
         Account account = ledgerService.createAccount(createAccountRequest.name());
         AccountResponse response = new AccountResponse(account.getId(), account.getName());
