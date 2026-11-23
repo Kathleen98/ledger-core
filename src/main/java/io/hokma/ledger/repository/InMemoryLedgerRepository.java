@@ -44,22 +44,17 @@ public class InMemoryLedgerRepository implements LedgerRepository {
     }
 
     @Override
-    public BigDecimal calculateBalance(String accountId){
-        BigDecimal balance = BigDecimal.ZERO;
+    public List<Entry> findTransactionsAccountId(String accountId) {
+        List<Entry> entries = new ArrayList<>();
 
-        for(Transaction t : transactions) {
-            for (Entry e : t.getEntries()) {
-                if (e.getAccount().getId().equals(accountId)) {
-                    if (e.getDirection() == Direction.CREDIT) {
-                        balance = balance.subtract(e.getAmount());
-                    } else {
-                        balance = balance.add(e.getAmount());
-                    }
+        for(Transaction t : transactions){
+            for(Entry e : t.getEntries()){
+                if(e.getAccount().getId().equals(accountId)){
+                    entries.add(e);
                 }
             }
         }
-
-        return balance;
+        return entries;
     }
 
 }

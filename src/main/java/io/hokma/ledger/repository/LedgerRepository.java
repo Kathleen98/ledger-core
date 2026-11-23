@@ -1,6 +1,7 @@
 package io.hokma.ledger.repository;
 
 import io.hokma.ledger.domain.Account;
+import io.hokma.ledger.domain.Entry;
 import io.hokma.ledger.domain.Transaction;
 import org.springframework.stereotype.Repository;
 
@@ -20,7 +21,5 @@ public interface LedgerRepository {
 
     List<Transaction> findAllTransactions();
 
-    BigDecimal calculateBalance(String AccountId);
-
-
+    List<Entry>  findTransactionsAccountId(String AccountId);
 }
